@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientSpaceBackground from "@/components/ClientSpaceBackground";
+import StructuredData from "@/components/StructuredData";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MD SHAZAN MAHMUD ARPON - Portfolio",
-  description: "Fullstack Developer | IoT Enthusiast | AI Passionate",
+  metadataBase: new URL('https://arpon007.me'),
+  title: "MD SHAZAN MAHMUD ARPON - Fullstack Developer Portfolio",
+  description: "Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies. Specializing in React, Next.js, Three.js, and TypeScript.",
   keywords: [
     "MD SHAZAN MAHMUD ARPON",
     "Fullstack Developer",
@@ -18,7 +20,22 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
     "Three.js",
+    "TypeScript",
+    "Node.js",
+    "Portfolio",
+    "Software Engineer",
+    "UI/UX Developer",
+    "Frontend Developer",
+    "Backend Developer"
   ],
+  authors: [{ name: "MD SHAZAN MAHMUD ARPON", url: "https://arpon007.me" }],
+  creator: "MD SHAZAN MAHMUD ARPON",
+  publisher: "MD SHAZAN MAHMUD ARPON",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   icons: {
     icon: [
       {
@@ -42,12 +59,12 @@ export const metadata: Metadata = {
   },
   // Open Graph metadata
   openGraph: {
-    type: 'website',
+    type: 'profile',
     locale: 'en_US',
     url: 'https://arpon007.me',
     siteName: "MD SHAZAN MAHMUD ARPON - Portfolio",
-    title: "MD SHAZAN MAHMUD ARPON - Portfolio",
-    description: "Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies",
+    title: "MD SHAZAN MAHMUD ARPON - Fullstack Developer Portfolio",
+    description: "Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies. Specializing in React, Next.js, Three.js, and TypeScript.",
     images: [
       {
         url: 'https://arpon007.me/og-image.png',
@@ -64,16 +81,16 @@ export const metadata: Metadata = {
   // LinkedIn specific metadata
   other: {
     'linkedin:card': 'summary_large_image',
-    'linkedin:title': 'MD SHAZAN MAHMUD ARPON - Portfolio',
-    'linkedin:description': 'Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies',
+    'linkedin:title': 'MD SHAZAN MAHMUD ARPON - Fullstack Developer Portfolio',
+    'linkedin:description': 'Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies. Specializing in React, Next.js, Three.js, and TypeScript.',
     'linkedin:image': 'https://arpon007.me/og-image.png',
     'linkedin:profile': 'https://www.linkedin.com/in/md-shazan-mahmud-arpon/',
     'linkedin:author': 'https://www.linkedin.com/in/md-shazan-mahmud-arpon/',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "MD SHAZAN MAHMUD ARPON - Portfolio",
-    description: "Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies",
+    title: "MD SHAZAN MAHMUD ARPON - Fullstack Developer Portfolio",
+    description: "Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies. Specializing in React, Next.js, Three.js, and TypeScript.",
     images: ['https://arpon007.me/og-image.png'],
     creator: '@arpondark',
     site: '@arpondark',
@@ -101,6 +118,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <StructuredData />
+      </head>
       <body className={`${inter.className} bg-black text-white min-h-screen relative`}>
         {/* 3D Space Background */}
         <ClientSpaceBackground />
