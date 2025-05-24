@@ -3,8 +3,28 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://arpon.vercel.app/sitemap.xml
+Sitemap: https://arpon007.me/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
 
 # Disallow crawling of specific paths if needed
 # Disallow: /api/
-# Disallow: /admin/ 
+# Disallow: /admin/
+
+# Allow all bots to access assets
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /*.ico$ 
