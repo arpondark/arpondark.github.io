@@ -40,6 +40,58 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
+  // Open Graph metadata
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://arpon007.me',
+    siteName: "MD SHAZAN MAHMUD ARPON - Portfolio",
+    title: "MD SHAZAN MAHMUD ARPON - Portfolio",
+    description: "Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies",
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'MD SHAZAN MAHMUD ARPON - Portfolio Preview',
+      }
+    ],
+  },
+  // Additional metadata for better social sharing
+  alternates: {
+    canonical: 'https://arpon007.me',
+  },
+  // LinkedIn specific metadata
+  other: {
+    'linkedin:card': 'summary_large_image',
+    'linkedin:title': 'MD SHAZAN MAHMUD ARPON - Portfolio',
+    'linkedin:description': 'Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies',
+    'linkedin:image': 'https://arpon007.me/og-image.png',
+    'linkedin:site': '@your-linkedin-handle', // Add your LinkedIn handle
+    'linkedin:creator': '@your-linkedin-handle', // Add your LinkedIn handle
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "MD SHAZAN MAHMUD ARPON - Portfolio",
+    description: "Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies",
+    images: ['/og-image.png'],
+    creator: '@arpondark',
+    site: '@arpondark',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'pEKet2CZDqwJIZaPi402jgemA81QDg4CbmErc0o8CFI',
+  },
 };
 
 export default function RootLayout({
