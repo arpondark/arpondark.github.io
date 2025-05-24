@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     description: "Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies",
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://arpon007.me/og-image.png',
         width: 1200,
         height: 630,
         alt: 'MD SHAZAN MAHMUD ARPON - Portfolio Preview',
@@ -67,14 +67,14 @@ export const metadata: Metadata = {
     'linkedin:title': 'MD SHAZAN MAHMUD ARPON - Portfolio',
     'linkedin:description': 'Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies',
     'linkedin:image': 'https://arpon007.me/og-image.png',
-    'linkedin:site': '@your-linkedin-handle', // Add your LinkedIn handle
-    'linkedin:creator': '@your-linkedin-handle', // Add your LinkedIn handle
+    'linkedin:profile': 'https://www.linkedin.com/in/md-shazan-mahmud-arpon/',
+    'linkedin:author': 'https://www.linkedin.com/in/md-shazan-mahmud-arpon/',
   },
   twitter: {
     card: 'summary_large_image',
     title: "MD SHAZAN MAHMUD ARPON - Portfolio",
     description: "Fullstack Developer | IoT Enthusiast | AI Passionate | Building innovative web solutions with modern technologies",
-    images: ['/og-image.png'],
+    images: ['https://arpon007.me/og-image.png'],
     creator: '@arpondark',
     site: '@arpondark',
   },
