@@ -19,6 +19,27 @@ export const metadata: Metadata = {
     "Next.js",
     "Three.js",
   ],
+  icons: {
+    icon: [
+      {
+        url: '/logo.png',
+        type: 'image/png',
+      }
+    ],
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/logo.png',
+    },
+  },
+  manifest: '/manifest.json',
+  themeColor: '#4f46e5',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
 
 export default function RootLayout({

@@ -1,0 +1,17 @@
+{
+  "name": "MD SHAZAN MAHMUD ARPON - Portfolio",
+  "short_name": "AR Portfolio",
+  "description": "Fullstack Developer | IoT Enthusiast | AI Passionate",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+} 
